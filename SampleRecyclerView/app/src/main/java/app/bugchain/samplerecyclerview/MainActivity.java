@@ -27,9 +27,12 @@ public class MainActivity extends ActionBarActivity {
 
 
         ItemClass[] itemClass = {
-                new ItemClass(this,LinearLayoutVertical.class,"Linear layout (Vertical)"),
-                new ItemClass(this,LinearLayoutHorizontal.class,"Linear layout (Horizontal)"),
-                new ItemClass(this,LinearLayoutVertical.class,"Linear layout (Vertical)")
+                new ItemClass(this,LinearLayoutVertical.class,getResources().getString(R.string.linear_layout_vertical)),
+                new ItemClass(this,LinearLayoutHorizontal.class,getResources().getString(R.string.linear_layout_horizontal)),
+                new ItemClass(this,GridLayout.class,getResources().getString(R.string.grid_layout)),
+                new ItemClass(this,GridHeader.class,getResources().getString(R.string.grid_layout_with_header)),
+                new ItemClass(this,GridLayoutSpanSize.class,getResources().getString(R.string.grid_layout_with_span_size)),
+                new ItemClass(this,GridLayoutAddRemove.class,getResources().getString(R.string.grid_layout_add_remove))
         };
 
         marginDecoration = new MarginDecoration(this);
@@ -52,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
         }
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int position) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.text_item,parent,false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.text_header,parent,false);
             return new ViewHolder(view);
         }
 
@@ -81,7 +84,7 @@ public class MainActivity extends ActionBarActivity {
 
         public ViewHolder(View itemView) {
             super(itemView);
-            textItem = (TextView)itemView.findViewById(R.id.textItem);
+            textItem = (TextView)itemView.findViewById(R.id.textHeader);
         }
     }
 

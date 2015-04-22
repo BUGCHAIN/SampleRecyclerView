@@ -4,7 +4,12 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
-    <string name="title_activity_linear_layout_vertical">LinearLayoutVertical</string>
-    <string name="title_activity_linear_layout_horizontal">LinearLayoutHorizontal</string>
+    <string name="linear_layout_vertical">LinearLayout (Vertical)</string>
+    <string name="linear_layout_horizontal">LinearLayout (Horizontal)</string>
+    <string name="grid_layout">Grid layout</string>
+    <string name="grid_layout_with_header">Grid layout with header</string>
+    <string name="grid_layout_with_span_size">Grid layout with span size</string>
+    <string name="grid_layout_add_remove">Grid layout (Add,Remove)</string>
 
+    <string name="add_item">Add item</string>
 </resources>

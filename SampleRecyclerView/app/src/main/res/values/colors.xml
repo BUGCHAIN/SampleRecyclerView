@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="blue_grey_50">#ECEFF1</color>
-    <color name="blue_grey_400">#78909C</color>
+    <color name="primary">#2196F3</color>
+    <color name="primaryDark">#1565C0</color>
+    <color name="accent">#E3F2FD</color>
+    <color name="windowBackground">#FAFAFA</color>
+
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_800">#757575</color>
 
 </resources>
